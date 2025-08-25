@@ -1,0 +1,54 @@
+[1mdiff --git a/.ipynb_checkpoints/365weatherdata-checkpoint.ipynb b/.ipynb_checkpoints/365weatherdata-checkpoint.ipynb[m
+[1mindex 63367aa..f7a9f22 100644[m
+[1m--- a/.ipynb_checkpoints/365weatherdata-checkpoint.ipynb[m
+[1m+++ b/.ipynb_checkpoints/365weatherdata-checkpoint.ipynb[m
+[36m@@ -2,10 +2,59 @@[m
+  "cells": [[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 29,[m
+[32m+[m[32m   "execution_count": 1,[m
+    "id": "45f91db3-77ee-46f9-989f-15529ad7b209",[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "metadata": {[m
+[32m+[m[32m    "scrolled": true[m
+[32m+[m[32m   },[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/attr_value.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/tensor.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/resource_handle.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/tensor_shape.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/types.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/full_type.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/function.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/node_def.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/op_def.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/graph.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/graph_debug_info.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/versions.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/protobuf/config.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at xla/tsl/protobuf/coordination_config.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/cost_graph.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorflow/core/framework/step_stats.proto. Please update the gencode to avoid compatibility violations in the next runtime release.\n",[m
+[32m+[m[32m      "  warnings.warn(\n",[m
+[32m+[m[32m      "C:\\Users\\argos\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\google\\protobuf\\runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.3 is exactly one major version older than the runtime version 6.31.1 at tensorf
